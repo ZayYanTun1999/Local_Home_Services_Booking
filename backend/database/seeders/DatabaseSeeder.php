@@ -4,26 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-use Database\Seeders\LocationSeeder;
-use Database\Seeders\CategorySeeder;
-use Database\Seeders\ServiceSeeder;
-use Database\Seeders\ServiceImageSeeder;
-use Database\Seeders\ProductSeeder;
-
-use Database\Seeders\FaqSeeder;
-use Database\Seeders\UserSeeder;
-
-use Database\Seeders\ProviderServiceSeeder;
-use Database\Seeders\ProviderAreaSeeder;
-
-use Database\Seeders\BookingSeeder;
-use Database\Seeders\BookingProductSeeder;
-use Database\Seeders\BookingImageSeeder;
-
-use Database\Seeders\ReviewSeeder;
-use Database\Seeders\NotificationSeeder;
-use Database\Seeders\ContactMessageSeeder;
-
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
@@ -46,7 +26,7 @@ class DatabaseSeeder extends Seeder
             ProviderServiceSeeder::class,
             ProviderAreaSeeder::class,
 
-            // 5. BOOKINGS (depends on everything above)
+            // 5. BOOKINGS
             BookingSeeder::class,
             BookingProductSeeder::class,
             BookingImageSeeder::class,
